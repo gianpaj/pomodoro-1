@@ -2,9 +2,10 @@
 
 Time managment tool for Windows and OS X based on [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Build with love and [electron](https://github.com/atom/electron).
 
-![Here may be screenshot](screenshot.png)
+<img src="screenshot.png" width="400">
 
 ## Features
+
 - Alerts
 - Customize work/relax time
 - Nice spinner provided by [kottenator](https://github.com/kottenator/jquery-circle-progress)
@@ -14,9 +15,8 @@ Time managment tool for Windows and OS X based on [Pomodoro Technique](https://e
 
 ## Dev
 
-```
+```bash
 npm install
-bower install
 ```
 
 ### Run
@@ -24,7 +24,6 @@ bower install
 ```
 npm start
 ```
-
 
 ## License
 

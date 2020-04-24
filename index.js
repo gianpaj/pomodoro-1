@@ -10,9 +10,10 @@ const path = require('path');
 const AutoLaunch = require('auto-launch');
 
 let timeFormat = new Hrt('%mm%:%ss%');
-let workTimer = 1500000;
-let relaxTimer = 300000;
-let longRelaxTimer = 900000;
+const millisecondsInAMinute = 60 * 1000;
+let workTimer = 0.2 * millisecondsInAMinute; // 25 mins
+let relaxTimer = 0.1 * millisecondsInAMinute; // 5 mins
+let longRelaxTimer = 15 * millisecondsInAMinute; // 15 mins
 let pomodoroCount = 0;
 let isRelaxTime = false;
 let showTimer = true;
@@ -32,9 +33,9 @@ let mb = menubar({
 		width: 340,
 		webPreferences: {
 			nodeIntegration: true
-	}
+		}
 	},
-	icon: path.join(__dirname, icon)
+  icon: path.join(__dirname, icon)
 });
 
 mb.app.allowRendererProcessReuse = true;

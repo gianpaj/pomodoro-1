@@ -52,7 +52,7 @@ class CircleController {
   }
 }
 
-global.CircleController = CircleController;
+// global.CircleController = CircleController;
 
 function overrideDefaults() {
   $.circleProgress.defaults.setValue = function(newValue) {
